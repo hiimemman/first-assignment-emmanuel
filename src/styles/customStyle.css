@@ -1,0 +1,149 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FRAME */
+.frame {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 370px; 
+  height: 100%; 
+  padding: 10px, 0px, 10px, 0px;
+}
+
+.card {
+  display: flex; 
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 15px 0px rgba(20, 20, 20, 0.12);
+  width: 500px;
+}
+
+.card > * {
+  margin-bottom: 10px; 
+}
+
+/* CUSTOM BUTTON */
+
+  .custom-button {
+    width: auto;
+    height: 40px;
+    position: relative;
+    padding: 10px, 20px, 10px, 20px;
+    gap: 10px;
+    border-radius: 4px;
+    border: none;
+    background: #ffce22;
+    opacity: 1;
+    cursor: pointer; 
+  }
+  
+  .custom-button:hover {
+    background: #ffd84d;
+  }
+
+  .custom-button:active {
+    background: #ffce22;
+  }
+  
+  .custom-button span {
+    position: relative;
+    width: 39px;
+    height: 18px;
+    gap: 0px; 
+    opacity: 1;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+    color: #1f2128;
+  }
+
+  /* CHECKBOX */
+  
+.custom-checkbox {
+  display: none; 
+}
+
+.custom-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+}
+
+.custom-checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: -13px;
+  right:5px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.custom-checkbox:hover + label:before {
+  background: url('data:image/svg+xml;utf8,<svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7.6L7.03451 12.9672C7.05497 12.9854 7.08626 12.9837 7.1047 12.9635L18 1" stroke="%23E3E3E3" stroke-linecap="round"/></svg>') no-repeat center center;
+  background-size: contain;
+ 
+}
+
+.custom-checkbox:checked + label:before {
+  background: url('data:image/svg+xml;utf8,<svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7.6L7.03451 12.9672C7.05497 12.9854 7.08626 12.9837 7.1047 12.9635L18 1" stroke="%23E3E3E3" stroke-linecap="round"/></svg>') no-repeat center center;
+  background-size: contain;
+  background-color: #2469F6;
+  border: 2px solid #2469F6;
+}
+
+.custom-checkbox:checked:hover + label:before {
+  background-color: #5087F8;
+  border-color: #5087F8;
+}
+
+
+.checkbox-label {
+  width: 100;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: left;
+  color: #1F2128;
+}
+
+.checkbox-card{
+  
+    display: flex;
+    background-color: #ffffff;
+    margin:0;
+    padding: 8px 15px 8px 22px;
+    width: auto; 
+    height: 42px; 
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* HR */
+
+hr {
+  width: 100%;
+  height: 0px;
+  border: 0.7px solid #CDCDCD;
+
+}
